@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 };
 
 // Only pass lightweight fields to client component
-const templatesListing = templates.map(({ id, title, category, image, description, tags, lighthouseScore }) => ({
-  id, title, category, image, description, tags, lighthouseScore,
+const templatesListing = templates.map(({ id, title, category, image, description, tags, lighthouseScore, price }) => ({
+  id, title, category, image, description, tags, lighthouseScore, price,
 }));
 
 export default function HomePage() {

@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
+import TemplateDemoViewer from "@/components/ui/TemplateDemoViewer";
 import FadeIn from "@/components/animations/FadeIn";
 import TemplateThumb from "@/components/ui/TemplateThumb";
 import LighthouseScore from "@/components/sections/templates/LighthouseScore";
@@ -274,7 +275,7 @@ export default function TemplateDetailClient({
       </section>
 
       {/* ============================================================
-          SECTION 2 — DEMO PREVIEW (toggleable)
+          SECTION 2 — DEMO PREVIEW (fullscreen browser mockup)
           ============================================================ */}
       {DemoComponent && (
         <section className="border-y border-border bg-surface py-12">
@@ -288,44 +289,27 @@ export default function TemplateDetailClient({
                   Découvrez le rendu complet du template avec ses sections et interactions
                 </p>
                 <button
-                  onClick={() => setShowDemo(!showDemo)}
+                  onClick={() => setShowDemo(true)}
                   className="mt-4 inline-flex items-center gap-2 rounded-xl border border-border bg-white px-6 py-3 text-sm font-semibold text-primary shadow-sm transition-all hover:shadow-md hover:border-accent/30 hover:-translate-y-0.5"
                 >
-                  {showDemo ? (
-                    <>
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="18 15 12 9 6 15" />
-                      </svg>
-                      Masquer la démo
-                    </>
-                  ) : (
-                    <>
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <polygon points="5 3 19 12 5 21 5 3" />
-                      </svg>
-                      Voir la démo complète
-                    </>
-                  )}
+                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14L21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                  Voir la démo en plein écran
                 </button>
               </div>
             </FadeIn>
           </Container>
 
-          <AnimatePresence>
-            {showDemo && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-                className="overflow-hidden"
-              >
-                <div className="border-t border-border">
-                  <DemoComponent />
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <TemplateDemoViewer
+            isOpen={showDemo}
+            onClose={() => setShowDemo(false)}
+            templateTitle={template.title}
+          >
+            <DemoComponent />
+          </TemplateDemoViewer>
         </section>
       )}
 
