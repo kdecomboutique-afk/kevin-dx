@@ -3,6 +3,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 import { blogPosts } from "@/data/blog-posts";
 import { templates } from "@/data/templates";
 import { generateAllSectorCityCombinations } from "@/data/sector-city-seo";
+import { generateAllServiceCityCombinations } from "@/data/service-city-seo-pages";
 import { caseStudies } from "@/data/case-studies";
 
 export const dynamic = "force-static";
@@ -150,6 +151,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    // Landing pages service+ville (SEO haute intention)
+    ...generateAllServiceCityCombinations().map((combo) => ({
+      url: `${baseUrl}${combo.path}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     // Études de cas
     {
       url: `${baseUrl}/etudes-de-cas`,
