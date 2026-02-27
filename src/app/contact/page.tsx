@@ -7,7 +7,7 @@ import ContactMap from "@/components/sections/contact/ContactMap";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Contact - Devis Gratuit",
+  title: "Contactez Kevin DX - Devis Gratuit sous 24h",
   description:
     "Contactez Kevin DX pour un devis gratuit. Création de sites vitrines, e-commerce et gestion de réseaux sociaux pour TPE, PME et artisans.",
   path: "/contact",

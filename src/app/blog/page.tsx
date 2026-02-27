@@ -3,17 +3,14 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import BlogGrid from "@/components/sections/blog/BlogGrid";
 import { blogPosts, blogCategories } from "@/data/blog-posts";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Blog | Conseils et guides pour votre présence web",
+export const metadata: Metadata = createMetadata({
+  title: "Blog - Conseils et Guides pour votre Présence Web",
   description:
     "Découvrez nos articles, guides et conseils pour créer et développer votre présence en ligne. Tarifs, astuces SEO, réseaux sociaux et plus encore.",
-  openGraph: {
-    title: "Blog | Conseils et guides pour votre présence web",
-    description:
-      "Articles, guides et conseils pour créer et développer votre présence en ligne.",
-  },
-};
+  path: "/blog",
+});
 
 // Strip content from blog posts — only listing data goes to the client
 const postsListing = blogPosts.map(({ content, ...rest }) => rest);

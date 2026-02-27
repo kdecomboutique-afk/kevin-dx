@@ -8,7 +8,7 @@ import ChatWidgetLoader from "@/components/chatbot/ChatWidgetLoader";
 import PageTransition from "@/components/animations/PageTransition";
 import SiteTrackerLoader from "@/components/analytics/SiteTrackerLoader";
 import ReferralTracker from "@/components/analytics/ReferralTracker";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, CONTACT, SOCIAL_LINKS } from "@/lib/constants";
 import "./globals.css";
 
 const inter = Inter({
@@ -37,11 +37,13 @@ export const metadata: Metadata = {
     siteName: SITE_CONFIG.name,
     title: SITE_CONFIG.title,
     description: SITE_CONFIG.description,
+    images: [{ url: "/og/default.png", width: 1200, height: 630, alt: "Kevin DX - Développeur Web Freelance" }],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_CONFIG.title,
     description: SITE_CONFIG.description,
+    images: ["/og/default.png"],
   },
   robots: {
     index: true,
@@ -57,6 +59,41 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${plusJakartaSans.variable}`}>
       <body className="antialiased">
+        {/* JSON-LD Organization + WebSite — all values from static constants, no user input */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: SITE_CONFIG.name,
+                url: SITE_CONFIG.url,
+                logo: `${SITE_CONFIG.url}/og/default.png`,
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: CONTACT.phone.replace(/\s/g, ""),
+                  email: CONTACT.email,
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "50 rue de la Liberté",
+                  addressLocality: "Roquemaure",
+                  postalCode: "30150",
+                  addressRegion: "Occitanie",
+                  addressCountry: "FR",
+                },
+                sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.github, SOCIAL_LINKS.instagram],
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: SITE_CONFIG.name,
+                url: SITE_CONFIG.url,
+              },
+            ]),
+          }}
+        />
         <CustomCursor />
         <Header />
         <main className="pt-16 lg:pt-20">

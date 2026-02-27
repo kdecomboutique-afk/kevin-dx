@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE_CONFIG, CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = createMetadata({
-  title: "Politique de Confidentialité",
+  title: "Politique de Confidentialité - Kevin DX",
   description:
     "Politique de confidentialité du site kevin-dx.fr - Traitement des données personnelles, cookies et droits RGPD.",
   path: "/politique-confidentialite",

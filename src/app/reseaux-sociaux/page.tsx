@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
+import { SITE_CONFIG } from "@/lib/constants";
 import ReseauxHero from "@/components/sections/reseaux/ReseauxHero";
 import ReseauxPricing from "@/components/sections/reseaux/ReseauxPricing";
 import ReseauxPortfolio from "@/components/sections/reseaux/ReseauxPortfolio";
@@ -14,9 +15,41 @@ export const metadata: Metadata = createMetadata({
   path: "/reseaux-sociaux",
 });
 
+// Service structured data — all values are hardcoded static constants, not user input
+const reseauxServiceJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Gestion Réseaux Sociaux",
+  description:
+    "Gestion professionnelle de vos réseaux sociaux : création de contenu, community management, publicités.",
+  provider: {
+    "@type": "Organization",
+    name: SITE_CONFIG.name,
+    url: SITE_CONFIG.url,
+  },
+  areaServed: { "@type": "Place", name: "Occitanie, France" },
+  offers: {
+    "@type": "Offer",
+    price: "199",
+    priceCurrency: "EUR",
+    priceSpecification: {
+      "@type": "UnitPriceSpecification",
+      price: "199",
+      priceCurrency: "EUR",
+      unitText: "mois",
+    },
+  },
+});
+
 export default function ReseauxSociauxPage() {
   return (
     <>
+      {/* Safe: content from static constants, no user input */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: reseauxServiceJsonLd }}
+      />
       <ReseauxHero />
       <ReseauxEngagements />
       <ReseauxPricing />

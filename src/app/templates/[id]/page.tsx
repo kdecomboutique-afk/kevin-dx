@@ -37,11 +37,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: SITE_CONFIG.name,
       locale: SITE_CONFIG.locale,
       type: "website",
+      images: [{ url: template.image, width: 1200, height: 630, alt: template.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${template.title} - Template ${template.category} | Kevin DX`,
       description: template.longDescription || template.description,
+      images: [template.image],
     },
   };
 }

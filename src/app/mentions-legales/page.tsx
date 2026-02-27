@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE_CONFIG, CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = createMetadata({
-  title: "Mentions Légales",
+  title: "Mentions Légales - Kevin DX Développeur Web",
   description:
     "Mentions légales du site kevin-dx.fr - Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
   path: "/mentions-legales",

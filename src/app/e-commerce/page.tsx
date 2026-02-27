@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
+import { SITE_CONFIG } from "@/lib/constants";
 import EcommerceHero from "@/components/sections/ecommerce/EcommerceHero";
 import EcommercePricing from "@/components/sections/ecommerce/EcommercePricing";
 import EcommerceProcess from "@/components/sections/ecommerce/EcommerceProcess";
@@ -14,9 +15,41 @@ export const metadata: Metadata = createMetadata({
   path: "/e-commerce",
 });
 
+// Service structured data — all values are hardcoded static constants, not user input
+const ecommerceServiceJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Création Boutique E-Commerce",
+  description:
+    "Création de boutiques en ligne professionnelles et sécurisées pour artisans et commerçants. Paiement intégré, gestion des stocks, SEO.",
+  provider: {
+    "@type": "Organization",
+    name: SITE_CONFIG.name,
+    url: SITE_CONFIG.url,
+  },
+  areaServed: { "@type": "Place", name: "Occitanie, France" },
+  offers: {
+    "@type": "Offer",
+    price: "1590",
+    priceCurrency: "EUR",
+    priceSpecification: {
+      "@type": "UnitPriceSpecification",
+      price: "1590",
+      priceCurrency: "EUR",
+      unitText: "projet",
+    },
+  },
+});
+
 export default function EcommercePage() {
   return (
     <>
+      {/* Safe: content from static constants, no user input */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: ecommerceServiceJsonLd }}
+      />
       <EcommerceHero />
       <EcommercePricing />
       <EcommerceProcess />

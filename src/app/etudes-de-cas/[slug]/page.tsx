@@ -81,11 +81,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: SITE_CONFIG.name,
       locale: SITE_CONFIG.locale,
       type: "article",
+      images: [{ url: "/og/default.png", width: 1200, height: 630, alt: study.seoTitle }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${study.seoTitle} | ${SITE_CONFIG.name}`,
       description: study.seoDescription,
+      images: ["/og/default.png"],
     },
     other: {
       "script:ld+json": JSON.stringify(jsonLd),
