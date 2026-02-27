@@ -83,7 +83,7 @@ export default function RootLayout({
                   addressRegion: "Occitanie",
                   addressCountry: "FR",
                 },
-                sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.github, SOCIAL_LINKS.instagram],
+                sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.github, SOCIAL_LINKS.facebook],
               },
               {
                 "@context": "https://schema.org",

@@ -16,9 +16,9 @@ export const CONTACT = {
 } as const;
 
 export const SOCIAL_LINKS = {
-  linkedin: "https://linkedin.com/in/kevin-dx",
-  github: "https://github.com/kevin-dx",
-  instagram: "https://instagram.com/kevin.dx",
+  linkedin: "https://www.linkedin.com/in/kevin-dureux-a71a523b2",
+  github: "https://github.com/kdecomboutique-afk",
+  facebook: "https://www.facebook.com/share/1Hwud2D5Wh/",
 } as const;
 
 export const FORMSPREE_ENDPOINT = "https://formspree.io/f/xvzbwqnp";
