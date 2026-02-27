@@ -11,7 +11,14 @@ export const navigation: NavItem[] = [
       { label: "Réseaux Sociaux", href: "/reseaux-sociaux" },
     ],
   },
-  { label: "Réalisations", href: "/realisations" },
+  {
+    label: "Réalisations",
+    href: "#",
+    children: [
+      { label: "Templates & démos", href: "/realisations" },
+      { label: "Études de cas", href: "/etudes-de-cas" },
+    ],
+  },
   { label: "Blog", href: "/blog" },
   { label: "Parrainage", href: "/parrainage" },
   { label: "Devis gratuit", href: "/devis" },
@@ -28,6 +35,7 @@ export const footerLinks = {
   ressources: [
     { label: "Templates", href: "/templates" },
     { label: "Réalisations", href: "/realisations" },
+    { label: "Études de cas", href: "/etudes-de-cas" },
     { label: "Blog", href: "/blog" },
     { label: "À propos", href: "/a-propos" },
     { label: "Financement FAFCEA", href: "/financement-artisan" },

@@ -74,8 +74,28 @@ export default function RealisationsPage() {
         </Container>
       </section>
 
-      {/* Approche */}
+      {/* Études de cas */}
       <section className="bg-surface py-16 lg:py-24">
+        <Container>
+          <FadeIn>
+            <div className="mx-auto max-w-3xl text-center">
+              <SectionHeading
+                badge="Résultats concrets"
+                title="Études de cas clients"
+                subtitle="Découvrez comment des artisans et TPE ont transformé leur activité grâce à un site web professionnel."
+              />
+              <div className="mt-8">
+                <Button href="/etudes-de-cas" size="lg">
+                  Voir les études de cas
+                </Button>
+              </div>
+            </div>
+          </FadeIn>
+        </Container>
+      </section>
+
+      {/* Approche */}
+      <section className="bg-white py-16 lg:py-24">
         <Container>
           <FadeIn>
             <div className="mx-auto max-w-3xl text-center">

@@ -3,6 +3,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 import { blogPosts } from "@/data/blog-posts";
 import { templates } from "@/data/templates";
 import { generateAllSectorCityCombinations } from "@/data/sector-city-seo";
+import { caseStudies } from "@/data/case-studies";
 
 export const dynamic = "force-static";
 
@@ -149,6 +150,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    // Études de cas
+    {
+      url: `${baseUrl}/etudes-de-cas`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    ...caseStudies.map((cs) => ({
+      url: `${baseUrl}/etudes-de-cas/${cs.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     // Landing pages secteur+ville
     ...sectorCityRoutes,
     // Templates individuels

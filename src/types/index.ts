@@ -81,3 +81,50 @@ export interface ContactInfo {
   location: string;
   availability: string;
 }
+
+export interface CaseStudyPainPoint {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface CaseStudyMetric {
+  value: number;
+  suffix: string;
+  prefix?: string;
+  label: string;
+}
+
+export interface CaseStudy {
+  slug: string;
+  clientType: string;
+  clientName: string;
+  city: string;
+  region: string;
+  templateId: string;
+  templateName: string;
+  heroMetric: { value: string; label: string };
+  tagline: string;
+  challenge: {
+    intro: string;
+    painPoints: CaseStudyPainPoint[];
+  };
+  solution: {
+    intro: string;
+    features: { title: string; description: string }[];
+    tech: string[];
+    price: string;
+    duration: string;
+  };
+  results: CaseStudyMetric[];
+  testimonial: {
+    quote: string;
+    author: string;
+    role: string;
+    rating: number;
+  };
+  colorScheme: { primary: string; accent: string };
+  lighthouseScore: number;
+  seoTitle: string;
+  seoDescription: string;
+}
