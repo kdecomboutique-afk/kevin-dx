@@ -39,28 +39,28 @@ const c = {
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
 /* ------------------------------------------------------------------ */
-const navLinks = ["New In", "Collections", "Lookbook", "Cart"];
+const navLinks = ["Nouveautés", "Collections", "Lookbook", "Panier"];
 
 const products = [
-  { name: "Silk Drape Dress", price: 289, category: "Dresses", grad: "linear-gradient(135deg, #D4BC8B, #8B7355)" },
-  { name: "Oversized Blazer", price: 345, category: "Jackets", grad: "linear-gradient(135deg, #3a3a3a, #1a1a1a)" },
-  { name: "Grained Leather Bag", price: 420, category: "Accessories", grad: "linear-gradient(135deg, #A8893E, #6B5A30)" },
-  { name: "Patent Stilettos", price: 195, category: "Shoes", grad: "linear-gradient(135deg, #6B21A8, #3B0764)" },
-  { name: "Cashmere Coat", price: 520, category: "Outerwear", grad: "linear-gradient(135deg, #D4AF37, #B8860B)" },
-  { name: "Wool Midi Skirt", price: 175, category: "Skirts", grad: "linear-gradient(135deg, #8B5E3C, #5C3D2E)" },
+  { name: "Robe Drapée en Soie", price: 289, category: "Robes", grad: "linear-gradient(135deg, #D4BC8B, #8B7355)" },
+  { name: "Blazer Oversize", price: 345, category: "Vestes", grad: "linear-gradient(135deg, #3a3a3a, #1a1a1a)" },
+  { name: "Sac en Cuir Grainé", price: 420, category: "Accessoires", grad: "linear-gradient(135deg, #A8893E, #6B5A30)" },
+  { name: "Escarpins Vernis", price: 195, category: "Chaussures", grad: "linear-gradient(135deg, #6B21A8, #3B0764)" },
+  { name: "Manteau en Cachemire", price: 520, category: "Manteaux", grad: "linear-gradient(135deg, #D4AF37, #B8860B)" },
+  { name: "Jupe Midi en Laine", price: 175, category: "Jupes", grad: "linear-gradient(135deg, #8B5E3C, #5C3D2E)" },
 ];
 
 const collections = [
-  { name: "Spring", pieces: 24, grad: `linear-gradient(135deg, #F9A8D4, #C084FC)` },
-  { name: "Summer", pieces: 18, grad: `linear-gradient(135deg, ${c.accent}, #F59E0B)` },
-  { name: "Autumn", pieces: 22, grad: `linear-gradient(135deg, #92400E, #DC2626)` },
-  { name: "Winter", pieces: 20, grad: `linear-gradient(135deg, #1E3A5F, #6B21A8)` },
+  { name: "Printemps", pieces: 24, grad: `linear-gradient(135deg, #F9A8D4, #C084FC)` },
+  { name: "Été", pieces: 18, grad: `linear-gradient(135deg, ${c.accent}, #F59E0B)` },
+  { name: "Automne", pieces: 22, grad: `linear-gradient(135deg, #92400E, #DC2626)` },
+  { name: "Hiver", pieces: 20, grad: `linear-gradient(135deg, #1E3A5F, #6B21A8)` },
 ];
 
 const lookbookImages = [
-  { grad: `linear-gradient(135deg, ${c.primary}40, ${c.accent}40)`, label: "Editorial 01" },
-  { grad: `linear-gradient(135deg, ${c.accent}60, #F9A8D440)`, label: "Editorial 02" },
-  { grad: `linear-gradient(135deg, #1A0A2E60, ${c.primary}30)`, label: "Editorial 03" },
+  { grad: `linear-gradient(135deg, ${c.primary}40, ${c.accent}40)`, label: "Éditorial 01" },
+  { grad: `linear-gradient(135deg, ${c.accent}60, #F9A8D440)`, label: "Éditorial 02" },
+  { grad: `linear-gradient(135deg, #1A0A2E60, ${c.primary}30)`, label: "Éditorial 03" },
 ];
 
 const sizes = [
@@ -393,15 +393,15 @@ export default function BoutiqueMode() {
             className="text-center"
           >
             <span className={`${typo.caption} block mb-3`} style={{ color: c.accent }}>NEWSLETTER</span>
-            <h2 className={`${typo.sectionTitle} mb-4`}>Stay in the Loop</h2>
+            <h2 className={`${typo.sectionTitle} mb-4`}>Restez Informée</h2>
             <p className={`${typo.subtitle} mb-8`} style={{ color: c.muted }}>
-              Early access to new collections, exclusive offers, and editorial content.
+              Accès anticipé aux nouvelles collections, offres exclusives et contenus éditoriaux.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Your email address"
+                placeholder="Votre adresse email"
                 className="flex-1 px-5 py-3 text-sm border outline-none transition-colors focus:border-purple-400"
                 style={{ borderColor: c.border, background: c.card, color: c.dark }}
               />
@@ -411,11 +411,11 @@ export default function BoutiqueMode() {
                 className="px-8 py-3 text-sm tracking-widest uppercase font-light text-white cursor-pointer"
                 style={{ background: c.primary }}
               >
-                Subscribe
+                S&apos;inscrire
               </motion.button>
             </div>
             <p className="text-xs mt-4" style={{ color: c.muted }}>
-              No spam. Unsubscribe anytime.
+              Pas de spam. Désinscription à tout moment.
             </p>
           </motion.div>
         </div>
@@ -428,13 +428,13 @@ export default function BoutiqueMode() {
             <div>
               <span className="text-lg font-light tracking-widest uppercase text-white block mb-4">Maison Elegance</span>
               <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.4)" }}>
-                Crafting timeless elegance since 2018. Paris &middot; Milan &middot; New York.
+                L&apos;élégance intemporelle depuis 2018. Paris &middot; Milan &middot; New York.
               </p>
             </div>
             {[
-              { title: "Shop", links: ["New In", "Collections", "Bestsellers", "Sale"] },
-              { title: "Help", links: ["Size Guide", "Shipping", "Returns", "Contact"] },
-              { title: "About", links: ["Our Story", "Sustainability", "Press", "Careers"] },
+              { title: "Boutique", links: ["Nouveautés", "Collections", "Best-sellers", "Soldes"] },
+              { title: "Aide", links: ["Guide des tailles", "Livraison", "Retours", "Contact"] },
+              { title: "À propos", links: ["Notre histoire", "Engagements", "Presse", "Carrières"] },
             ].map((col) => (
               <div key={col.title}>
                 <span className="text-xs tracking-widest uppercase text-white/60 block mb-4">{col.title}</span>
@@ -447,7 +447,7 @@ export default function BoutiqueMode() {
             ))}
           </div>
           <div className="border-t pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style={{ borderColor: "rgba(255,255,255,0.1)" }}>
-            <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>&copy; 2026 Maison Elegance. All rights reserved.</p>
+            <p className="text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>&copy; 2026 Maison Elegance. Tous droits réservés.</p>
             <div className="flex gap-6">
               {["Instagram", "Pinterest", "TikTok"].map((l) => (
                 <span key={l} className="text-xs cursor-pointer hover:text-white transition-colors" style={{ color: "rgba(255,255,255,0.3)" }}>{l}</span>
