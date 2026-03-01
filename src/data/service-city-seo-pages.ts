@@ -156,7 +156,7 @@ const vitrineConfig: ServiceCityConfig = {
     },
     {
       question: `En combien de temps mon site vitrine sera-t-il prêt à ${city.name} ?`,
-      answer: `Votre site vitrine est livré en 7 jours après validation de la maquette. C'est 2 à 3 fois plus rapide qu'une agence classique grâce à mes templates sectoriels et mes outils IA. Le premier rendez-vous peut se faire en personne à ${city.name} (je suis basé ${city.distance}) ou en visioconférence.`,
+      answer: `Votre site vitrine est livré en 10 à 14 jours après validation de la maquette. C'est 2 à 3 fois plus rapide qu'une agence classique grâce à mes templates sectoriels et mes outils IA. Le premier rendez-vous peut se faire en personne à ${city.name} (je suis basé ${city.distance}) ou en visioconférence.`,
     },
   ],
 };

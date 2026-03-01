@@ -43,14 +43,14 @@ export default function MentionsLegalesPage() {
                 </h2>
                 <div className="rounded-2xl border border-border bg-white p-6 space-y-2 text-text">
                   <p>
-                    <strong>Nom :</strong> Kevin DX (auto-entrepreneur)
+                    <strong>Nom :</strong> Kevin DX (micro-entrepreneur)
                   </p>
                   <p>
                     <strong>Activité :</strong> Création de sites web et gestion
                     de réseaux sociaux
                   </p>
                   <p>
-                    <strong>SIRET :</strong> [À compléter]
+                    <strong>SIRET :</strong> En cours d&apos;immatriculation — Réf. J00220670293
                   </p>
                   <p>
                     <strong>Adresse :</strong> {CONTACT.location}

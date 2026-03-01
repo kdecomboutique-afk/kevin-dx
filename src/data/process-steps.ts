@@ -6,7 +6,7 @@ export const vitrineProcess: ProcessStep[] = [
     title: "Découverte",
     description:
       "Brief téléphonique ou en visio pour analyser vos besoins, comprendre votre activité et définir les objectifs de votre site vitrine.",
-    duration: "1-2 jours",
+    duration: "1 jour",
     icon: "chat",
   },
   {
@@ -14,7 +14,7 @@ export const vitrineProcess: ProcessStep[] = [
     title: "Maquette",
     description:
       "Création du design sur mesure adapté à votre identité visuelle. Vous validez les maquettes avant le passage au développement.",
-    duration: "3-5 jours",
+    duration: "2-3 jours",
     icon: "palette",
   },
   {
@@ -30,7 +30,7 @@ export const vitrineProcess: ProcessStep[] = [
     title: "Tests & Optimisation",
     description:
       "Tests approfondis sur tous les appareils, optimisation des performances, du SEO et de l'accessibilité.",
-    duration: "2-3 jours",
+    duration: "1-2 jours",
     icon: "check",
   },
   {

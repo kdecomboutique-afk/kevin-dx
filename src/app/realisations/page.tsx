@@ -80,13 +80,13 @@ export default function RealisationsPage() {
           <FadeIn>
             <div className="mx-auto max-w-3xl text-center">
               <SectionHeading
-                badge="Résultats concrets"
-                title="Études de cas clients"
-                subtitle="Découvrez comment des artisans et TPE ont transformé leur activité grâce à un site web professionnel."
+                badge="Résultats projetés"
+                title="Simulations de projet"
+                subtitle="Découvrez ce qu'un site professionnel peut apporter à votre activité grâce à des scénarios réalistes."
               />
               <div className="mt-8">
                 <Button href="/etudes-de-cas" size="lg">
-                  Voir les études de cas
+                  Voir les simulations
                 </Button>
               </div>
             </div>

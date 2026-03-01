@@ -25,7 +25,7 @@ function generateFAQ(sector: Sector, city: LocalCity): FAQ[] {
     },
     {
       question: `En combien de temps mon site ${sector.name.toLowerCase()} sera-t-il prêt ?`,
-      answer: `Un site vitrine est livré en 7 jours après validation de la maquette. Pour un site e-commerce, comptez 2 à 3 semaines. C'est 2 à 3 fois plus rapide qu'une agence classique grâce à mes templates sectoriels et mes outils IA. Le processus démarre par un entretien gratuit (en personne à ${city.name} ou en visio) pour comprendre vos besoins et vous présenter le template ${sector.name} que j'adapterai à votre image.`,
+      answer: `Un site vitrine est livré en 10 à 14 jours après validation de la maquette. Pour un site e-commerce, comptez 3 à 4 semaines. C'est 2 à 3 fois plus rapide qu'une agence classique grâce à mes templates sectoriels et mes outils IA. Le processus démarre par un entretien gratuit (en personne à ${city.name} ou en visio) pour comprendre vos besoins et vous présenter le template ${sector.name} que j'adapterai à votre image.`,
     },
     {
       question: `Mon site sera-t-il bien référencé pour les recherches à ${city.name} ?`,

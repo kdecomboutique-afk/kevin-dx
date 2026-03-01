@@ -178,7 +178,7 @@ export default function QuoteStep3({
                 onChange={(e) =>
                   setFormData((p) => ({ ...p, email: e.target.value }))
                 }
-                placeholder="jean@example.com"
+                placeholder="jean@monentreprise.fr"
                 className="w-full rounded-xl border-2 border-border bg-surface px-4 py-2.5 text-sm text-text placeholder:text-text-muted/60 transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
               />
             </div>

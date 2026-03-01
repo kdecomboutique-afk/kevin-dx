@@ -95,10 +95,10 @@ export default function ParrainageCommissions() {
             Exemple concret
           </h3>
           <p className="mt-2 text-text-muted leading-relaxed">
-            Vous recommandez 3 pros dans l&apos;année : un plombier prend un site vitrine (899€),
+            Vous recommandez 3 pros dans l&apos;année : un plombier prend un site vitrine (999€),
             un restaurant prend un e-commerce (2 490€), un coach prend les réseaux sociaux (199€/mois).{" "}
             <strong className="text-primary">
-              Vous touchez environ 90€ + 175€ + 199€ = 464€
+              Vous touchez environ 100€ + 175€ + 199€ = 474€
             </strong>{" "}
             pour avoir simplement partagé un lien.
           </p>

@@ -16,7 +16,7 @@ export const pageWelcomes: Record<
   },
   "/site-vitrine": {
     message:
-      "Vous consultez l'offre Site Vitrine. Un site pro à partir de 599 \u20ac, livré en 7 jours.",
+      "Vous consultez l'offre Site Vitrine. Un site pro à partir de 599 \u20ac, livré en 10-14 jours.",
     quickReplies: [
       { id: "qr-sv-info", label: "En savoir plus", value: "info-vitrine" },
       { id: "qr-sv-prix", label: "Combien \u00e7a co\u00fbte ?", value: "prix-vitrine" },
@@ -124,7 +124,7 @@ export const sectorTemplateMap: Record<string, string[]> = {
 // --- Service info messages ---
 export const serviceInfoMessages: Record<string, string> = {
   "info-vitrine":
-    "Le Site Vitrine, c'est votre carte de visite en ligne. \u00c0 partir de 599 \u20ac :\n\n\u2713 Design responsive sur mesure\n\u2713 SEO optimis\u00e9 pour Google\n\u2713 Formulaire de contact\n\u2713 Chatbot IA inclus\n\u2713 H\u00e9bergement 1 an offert\n\u2713 Livr\u00e9 en 7 jours\n\u2713 \u00c9ligible FAFCEA\n\nVous souhaitez un devis personnalis\u00e9 ?",
+    "Le Site Vitrine, c'est votre carte de visite en ligne. \u00c0 partir de 599 \u20ac :\n\n\u2713 Design responsive sur mesure\n\u2713 SEO optimis\u00e9 pour Google\n\u2713 Formulaire de contact\n\u2713 Chatbot IA inclus\n\u2713 H\u00e9bergement 1 an offert\n\u2713 Livr\u00e9 en 10-14 jours\n\u2713 \u00c9ligible FAFCEA\n\nVous souhaitez un devis personnalis\u00e9 ?",
   "prix-vitrine":
     "Le Site Vitrine d\u00e9marre \u00e0 599 \u20ac. Le prix final d\u00e9pend du nombre de pages et des options (blog, galerie, r\u00e9servation...). Paiement en 3x possible. Vous voulez un devis gratuit adapt\u00e9 \u00e0 votre projet ?",
   "info-ecommerce":
@@ -204,8 +204,8 @@ CONTEXTE BUSINESS :
 - Stack moderne : React/Next.js (pas WordPress)
 
 OFFRES :
-- Site Vitrine : à partir de 599€, livré en 7 jours
-- E-Commerce : à partir de 1 590€, livré en 2-3 semaines
+- Site Vitrine : à partir de 599€, livré en 10-14 jours
+- E-Commerce : à partir de 1 590€, livré en 3-4 semaines
 - Réseaux Sociaux : 199€/mois
 - 26 templates sectoriels à 99€ (Lighthouse 95+)
 

@@ -74,7 +74,7 @@ export default function CareerTimeline() {
       <Container>
         <SectionHeading
           badge="Parcours"
-          title="10 ans de terrain, une seule mission"
+          title="10 ans de parcours atypique, une seule mission"
           subtitle="Chaque étape m'a rapproché de ce que je fais aujourd'hui : aider ceux qui bossent avec leurs mains à exister en ligne."
         />
 

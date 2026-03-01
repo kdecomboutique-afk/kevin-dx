@@ -41,7 +41,7 @@ function getServicesForCity(city: LocalCity): ServiceCardData[] {
         "Chatbot IA inclus",
         "Hebergement 1 an offert",
         "Eligible FAFCEA",
-        "Livraison en 7 jours",
+        "Livraison en 10-14 jours",
       ],
       icon: (
         <svg

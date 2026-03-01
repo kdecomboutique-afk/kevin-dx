@@ -9,7 +9,7 @@ export const vitrineFAQ: FAQ[] = [
   {
     question: "Combien de temps pour créer un site vitrine ?",
     answer:
-      "En moyenne, comptez 7 jours entre le brief initial et la mise en ligne. Grâce à mes templates sectoriels prêts à l'emploi et mes outils IA, je livre plus vite que n'importe quelle agence. Le délai exact dépend du nombre de pages et de la rapidité de vos retours sur les maquettes.",
+      "En moyenne, comptez 10 à 14 jours entre le brief initial et la mise en ligne. Grâce à mes templates sectoriels prêts à l'emploi et mes outils IA, je livre bien plus vite que n'importe quelle agence. Le délai exact dépend du nombre de pages et de la rapidité de vos retours sur les maquettes.",
   },
   {
     question: "Est-ce que le site sera responsive ?",
@@ -47,7 +47,7 @@ export const ecommerceFAQ: FAQ[] = [
   {
     question: "Combien de produits puis-je ajouter ?",
     answer:
-      "Le pack Standard permet de gérer jusqu'à 100 produits, ce qui convient à la plupart des artisans et petites boutiques. Le pack Pro offre un nombre de produits illimité avec des fonctionnalités avancées de gestion de catalogue.",
+      "Le pack Standard permet de gérer jusqu'à 50 produits, ce qui convient à la plupart des artisans et petites boutiques. Le pack Pro offre un nombre de produits illimité avec des fonctionnalités avancées de gestion de catalogue.",
   },
   {
     question: "Comment fonctionne le paiement en ligne ?",
@@ -62,7 +62,7 @@ export const ecommerceFAQ: FAQ[] = [
   {
     question: "Quel est le délai de livraison ?",
     answer:
-      "Comptez 2 à 3 semaines pour le pack Standard et 3 à 4 semaines pour le pack Pro. Ce délai inclut la conception, le développement, l'intégration de vos produits et la phase de tests. C'est 2 à 3 fois plus rapide qu'une agence classique, grâce à mes outils IA et mes templates e-commerce prêts à l'emploi.",
+      "Comptez 3 à 4 semaines pour le pack Standard comme pour le pack Pro. Ce délai inclut la conception, le développement, l'intégration de vos produits et la phase de tests. C'est 2 à 3 fois plus rapide qu'une agence classique, grâce à mes outils IA et mes templates e-commerce prêts à l'emploi.",
   },
   {
     question: "Le site sera-t-il sécurisé ?",

@@ -13,7 +13,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = createMetadata({
   title: "À Propos - De Couvreur à Développeur Web Freelance",
   description:
-    "Découvrez le parcours de Kevin DX : pompier, policier, couvreur, puis développeur web freelance. 10 ans de terrain, 26 templates, des sites ultra-performants pour artisans et TPE en Occitanie.",
+    "Découvrez le parcours de Kevin DX : pompier, policier, couvreur, puis développeur web freelance. 10 ans de parcours atypique, 26 templates, des sites ultra-performants pour artisans et TPE en Occitanie.",
   path: "/a-propos",
 });
 

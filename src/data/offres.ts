@@ -16,7 +16,7 @@ export const vitrineTiers: PricingTier[] = [
       "SEO de base",
       "Hebergement 1 an offert",
       "Eligible FAFCEA",
-      "Livraison en 7 jours",
+      "Livraison en 10-14 jours",
     ],
     highlighted: false,
     cta: "Choisir Starter",
@@ -36,7 +36,7 @@ export const vitrineTiers: PricingTier[] = [
       "Hebergement 1 an offert",
       "Blog integre",
       "Eligible FAFCEA",
-      "Livraison en 7 jours",
+      "Livraison en 10-14 jours",
     ],
     highlighted: true,
     cta: "Choisir Pro",
@@ -53,7 +53,7 @@ export const ecommerceTiers: PricingTier[] = [
     description:
       "Parfait pour lancer votre premiere boutique en ligne et commencer a vendre vos produits sur internet.",
     features: [
-      "Boutique jusqu'a 100 produits",
+      "Boutique jusqu'a 50 produits",
       "Paiement securise (Stripe)",
       "Design responsive",
       "Gestion des stocks",
@@ -61,7 +61,7 @@ export const ecommerceTiers: PricingTier[] = [
       "Relance paniers abandonnes",
       "SEO e-commerce",
       "Eligible FAFCEA",
-      "Livraison en 2-3 semaines",
+      "Livraison en 3-4 semaines",
     ],
     highlighted: false,
     cta: "Choisir Standard",
@@ -181,8 +181,8 @@ export const comparisonRows: ComparisonRow[] = [
   {
     criteria: "Délai",
     template: "Immédiat",
-    starter: "7 jours",
-    pro: "7 jours",
+    starter: "10-14 jours",
+    pro: "10-14 jours",
   },
 ];
 

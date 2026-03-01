@@ -18,7 +18,7 @@ const reasons = [
     ),
   },
   {
-    title: "10 ans de terrain",
+    title: "10 ans de parcours atypique",
     description:
       "Pompier, policier, couvreur — je sais ce que c'est de bosser avec ses mains, sous pression, et sans temps pour le digital.",
     icon: (

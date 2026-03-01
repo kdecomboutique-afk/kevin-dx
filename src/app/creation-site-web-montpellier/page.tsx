@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getCityBySlug } from "@/data/local-seo";
-import { SITE_CONFIG, CONTACT } from "@/lib/constants";
+import { SITE_CONFIG, CONTACT, SOCIAL_LINKS } from "@/lib/constants";
 import LocalHero from "@/components/sections/local/LocalHero";
 import LocalServices from "@/components/sections/local/LocalServices";
 import LocalAdvantages from "@/components/sections/local/LocalAdvantages";
@@ -63,8 +63,9 @@ function MontpellierJsonLd() {
     priceRange: "599EUR - 1590EUR",
     openingHours: "Mo-Fr 09:00-18:00",
     sameAs: [
-      "https://linkedin.com/in/kevin-dx",
-      "https://github.com/kevin-dx",
+      SOCIAL_LINKS.linkedin,
+      SOCIAL_LINKS.github,
+      SOCIAL_LINKS.facebook,
     ],
   };
 

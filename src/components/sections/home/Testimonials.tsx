@@ -13,7 +13,7 @@ const reasons = [
     ),
     title: "Ancien du BTP, je vous comprends",
     description:
-      "Après 10 ans de terrain (pompier, policier, couvreur), je connais la réalité des TPE et artisans. Pas de jargon technique, des solutions concrètes adaptées à votre métier.",
+      "Après 10 ans de parcours atypique (pompier, policier, couvreur), je connais la réalité des TPE et artisans. Pas de jargon technique, des solutions concrètes adaptées à votre métier.",
     isHero: true,
   },
   {

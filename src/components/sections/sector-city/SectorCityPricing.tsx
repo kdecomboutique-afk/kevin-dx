@@ -44,7 +44,7 @@ export default function SectorCityPricing({ sector, city }: SectorCityPricingPro
                 </div>
               </div>
               <ul className="mt-4 space-y-2">
-                {["Design responsive", "SEO local " + city.name, "Chatbot IA inclus", "Livraison en 7 jours"].map((f) => (
+                {["Design responsive", "SEO local " + city.name, "Chatbot IA inclus", "Livraison en 10-14 jours"].map((f) => (
                   <li key={f} className="flex items-center gap-2 text-sm text-text">
                     <svg className="h-4 w-4 text-secondary" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />

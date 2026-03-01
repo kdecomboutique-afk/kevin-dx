@@ -34,7 +34,7 @@ export default function SectorCityHero({ sector, city }: SectorCityHeroProps) {
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300">
               Un site web professionnel et performant pour votre{" "}
               {sector.name.toLowerCase()} à {city.name}. Design sur mesure, SEO
-              local optimisé, livré en 7 jours. À partir de 599&euro;.
+              local optimisé, livré en 10-14 jours. À partir de 599&euro;.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
