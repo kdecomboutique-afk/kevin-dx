@@ -10,9 +10,9 @@ export const caseStudies: CaseStudy[] = [
     templateId: "template-btp",
     templateName: "Bâtisseur Pro",
     heroMetric: { value: "+200%", label: "de demandes de devis" },
-    tagline: "Comment un plombier de Nîmes a triplé ses demandes de devis grâce à un site moderne",
+    tagline: "Comment un site moderne pourrait tripler les demandes de devis d'un plombier à Nîmes",
     challenge: {
-      intro: "Comme beaucoup d'artisans, ce plombier nîmois comptait uniquement sur le bouche-à-oreille. Résultat : des périodes creuses imprévisibles et aucune visibilité en ligne.",
+      intro: "Comme beaucoup d'artisans, un plombier nîmois typique compte uniquement sur le bouche-à-oreille. Résultat : des périodes creuses imprévisibles et aucune visibilité en ligne.",
       painPoints: [
         {
           icon: "search",
@@ -50,15 +50,15 @@ export const caseStudies: CaseStudy[] = [
       { value: 15, suffix: "", label: "Nouveaux clients/mois" },
     ],
     testimonial: {
-      quote: "Avant, je comptais sur le bouche-à-oreille et j'avais des mois creux. Depuis que Kevin m'a fait mon site, mon téléphone sonne tous les jours. En 2 mois, j'ai dû embaucher un apprenti pour suivre la cadence. Le meilleur investissement de ma carrière.",
-      author: "Thomas R.",
-      role: "Plombier-chauffagiste à Nîmes",
+      quote: "Un artisan sans site web perd en moyenne 60% des prospects qui cherchent sur Google. Avec un site optimisé SEO local, un plombier à Nîmes peut capter les recherches « plombier Nîmes » et transformer chaque visite en demande de devis qualifiée.",
+      author: "Projection basée sur les données SEO locales",
+      role: "Scénario type — artisan BTP en Occitanie",
       rating: 5,
     },
     colorScheme: { primary: "#1e3a5f", accent: "#f59e0b" },
     lighthouseScore: 95,
-    seoTitle: "Étude de cas : plombier à Nîmes — +200% de devis",
-    seoDescription: "Découvrez comment un plombier de Nîmes a triplé ses demandes de devis grâce à un site web moderne et optimisé SEO. Étude de cas Kevin DX.",
+    seoTitle: "Simulation : site web pour plombier à Nîmes — potentiel +200% de devis",
+    seoDescription: "Découvrez comment un site web moderne et optimisé SEO pourrait tripler les demandes de devis d'un plombier à Nîmes. Simulation de projet Kevin DX.",
   },
   {
     slug: "restaurant-avignon-reservations",
@@ -69,9 +69,9 @@ export const caseStudies: CaseStudy[] = [
     templateId: "template-restaurant",
     templateName: "Saveur & Tradition",
     heroMetric: { value: "40", label: "réservations en ligne/mois" },
-    tagline: "Comment un restaurant avignonnais a rempli ses tables grâce à la réservation en ligne",
+    tagline: "Comment un restaurant avignonnais pourrait remplir ses tables grâce à la réservation en ligne",
     challenge: {
-      intro: "Ce restaurant familial d'Avignon avait une belle réputation locale, mais dépendait entièrement des plateformes comme TheFork (avec leurs commissions) et des appels téléphoniques en plein service.",
+      intro: "Un restaurant familial d'Avignon typique a souvent une belle réputation locale, mais dépend entièrement des plateformes comme TheFork (avec leurs commissions) et des appels téléphoniques en plein service.",
       painPoints: [
         {
           icon: "percent",
@@ -109,15 +109,15 @@ export const caseStudies: CaseStudy[] = [
       { value: 35, suffix: "%", prefix: "+", label: "Chiffre d'affaires" },
     ],
     testimonial: {
-      quote: "On payait une fortune en commissions sur TheFork. Maintenant, les clients réservent directement sur notre site. 40 réservations par mois sans commission, c'est comme avoir un employé gratuit. Et le site est tellement beau que les gens nous font des compliments dessus !",
-      author: "Marie L.",
-      role: "Gérante de restaurant à Avignon",
+      quote: "Un restaurant qui passe de TheFork à la réservation directe économise en moyenne 200 à 500 euros par mois en commissions. Un site avec formulaire de réservation intégré permet aux clients de réserver 24h/24 sans intermédiaire.",
+      author: "Projection basée sur les données restauration",
+      role: "Scénario type — restaurant en centre-ville",
       rating: 5,
     },
     colorScheme: { primary: "#2d1810", accent: "#c4841d" },
     lighthouseScore: 98,
-    seoTitle: "Étude de cas : restaurant à Avignon — 40 réservations/mois",
-    seoDescription: "Comment un restaurant d'Avignon a obtenu 40 réservations en ligne par mois sans commission grâce à un site web moderne. Étude de cas Kevin DX.",
+    seoTitle: "Simulation : site web pour restaurant à Avignon — 40 réservations/mois",
+    seoDescription: "Comment un site web moderne pourrait apporter 40 réservations en ligne par mois sans commission à un restaurant d'Avignon. Simulation de projet Kevin DX.",
   },
   {
     slug: "institut-beaute-tarascon",
@@ -128,9 +128,9 @@ export const caseStudies: CaseStudy[] = [
     templateId: "template-beaute",
     templateName: "Éclat Beauté",
     heroMetric: { value: "90%", label: "d'agenda rempli" },
-    tagline: "Comment un institut de beauté à Tarascon a rempli son agenda à 90% toute l'année",
+    tagline: "Comment un institut de beauté à Tarascon pourrait remplir son agenda à 90% toute l'année",
     challenge: {
-      intro: "Cette esthéticienne à Tarascon avait du mal à fidéliser sa clientèle et à remplir ses créneaux hors périodes de fêtes. Sans visibilité en ligne, elle dépendait des réseaux sociaux avec des résultats irréguliers.",
+      intro: "Beaucoup d'esthéticiennes indépendantes ont du mal à fidéliser leur clientèle et à remplir leurs créneaux hors périodes de fêtes. Sans visibilité en ligne, elles dépendent des réseaux sociaux avec des résultats irréguliers.",
       painPoints: [
         {
           icon: "calendar",
@@ -168,15 +168,15 @@ export const caseStudies: CaseStudy[] = [
       { value: 25, suffix: "%", prefix: "+", label: "Panier moyen" },
     ],
     testimonial: {
-      quote: "Je passais des heures sur Instagram sans résultat concret. Depuis que j'ai mon site, les clientes réservent en ligne même à 23h. Mon agenda est rempli à 90% toute l'année, même en janvier ! Kevin a compris exactement ce dont j'avais besoin.",
-      author: "Sophie M.",
-      role: "Esthéticienne à Tarascon",
+      quote: "Un institut de beauté avec prise de rendez-vous en ligne capte les réservations 24h/24 — y compris le soir quand les clientes ont le temps de s'en occuper. Le catalogue de prestations avec tarifs clairs élimine les allers-retours par DM Instagram.",
+      author: "Projection basée sur les données beauté/bien-être",
+      role: "Scénario type — esthéticienne indépendante",
       rating: 5,
     },
     colorScheme: { primary: "#4a2040", accent: "#d4a574" },
     lighthouseScore: 99,
-    seoTitle: "Étude de cas : institut de beauté à Tarascon — agenda rempli à 90%",
-    seoDescription: "Comment un institut de beauté à Tarascon a rempli son agenda à 90% grâce à un site web avec réservation en ligne. Étude de cas Kevin DX.",
+    seoTitle: "Simulation : site web pour institut de beauté à Tarascon — agenda rempli à 90%",
+    seoDescription: "Comment un site web avec réservation en ligne pourrait remplir l'agenda d'un institut de beauté à Tarascon à 90%. Simulation de projet Kevin DX.",
   },
 ];
 

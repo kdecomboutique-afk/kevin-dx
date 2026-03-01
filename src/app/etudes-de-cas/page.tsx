@@ -9,9 +9,9 @@ import { createMetadata } from "@/lib/metadata";
 import { caseStudies } from "@/data/case-studies";
 
 export const metadata: Metadata = createMetadata({
-  title: "Études de cas - Résultats concrets pour artisans et TPE",
+  title: "Simulations de projet - Ce qu'un site web peut apporter à votre activité",
   description:
-    "Découvrez comment des artisans et TPE ont boosté leur activité grâce à un site web professionnel. Résultats chiffrés, témoignages clients et méthodologie Kevin DX.",
+    "Découvrez comment un site web professionnel peut booster l'activité d'un artisan ou d'une TPE. Scénarios réalistes, résultats projetés et solutions concrètes par Kevin DX.",
   path: "/etudes-de-cas",
 });
 
@@ -30,9 +30,9 @@ export default function EtudesDeCasPage() {
           <FadeIn>
             <SectionHeading
               as="h1"
-              badge="Résultats concrets"
-              title="Études de cas"
-              subtitle="Des artisans et TPE qui ont transformé leur activité grâce à un site web professionnel. Résultats chiffrés, témoignages vérifiés."
+              badge="Simulations de projet"
+              title="Ce qu'on peut faire pour vous"
+              subtitle="Des scénarios réalistes basés sur les besoins typiques des artisans et TPE en Occitanie. Résultats projetés, solutions concrètes."
             />
           </FadeIn>
         </Container>
@@ -109,11 +109,11 @@ export default function EtudesDeCasPage() {
           <FadeIn>
             <div className="text-center">
               <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl">
-                Votre success story commence ici
+                Et si c&apos;était votre entreprise ?
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
-                Chaque étude de cas a commencé par un simple devis gratuit.
-                Discutons de votre projet et voyons comment booster votre activité.
+                Ces simulations montrent ce qu&apos;un site web professionnel peut apporter à votre activité.
+                Discutons de votre projet — le devis est gratuit et sans engagement.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <Button href="/devis" size="lg">

@@ -55,19 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         name: study.city,
       },
     },
-    review: {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: study.testimonial.rating,
-        bestRating: 5,
-      },
-      author: {
-        "@type": "Person",
-        name: study.testimonial.author,
-      },
-      reviewBody: study.testimonial.quote,
-    },
+    genre: "Simulation de projet",
   };
 
   return {
