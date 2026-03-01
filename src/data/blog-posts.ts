@@ -1021,7 +1021,7 @@ export const blogPosts: BlogPost[] = [
     author: "Kevin DX",
     publishedAt: "2025-01-20",
     readTime: "9 min",
-    image: "/blog/google-my-business-artisans.jpg",
+    image: "/blog/google-my-business-artisans.webp",
     tags: ["Google My Business", "SEO local", "artisan", "fiche Google"],
     content: [
       {
@@ -1264,7 +1264,7 @@ export const blogPosts: BlogPost[] = [
     author: "Kevin DX",
     publishedAt: "2025-01-25",
     readTime: "10 min",
-    image: "/blog/wordpress-vs-nextjs.jpg",
+    image: "/blog/wordpress-vs-nextjs.webp",
     tags: ["WordPress", "Next.js", "performance", "technologie"],
     content: [
       {
@@ -1471,7 +1471,7 @@ export const blogPosts: BlogPost[] = [
     author: "Kevin DX",
     publishedAt: "2025-02-01",
     readTime: "8 min",
-    image: "/blog/doubler-chiffre-affaires-artisan.jpg",
+    image: "/blog/doubler-chiffre-affaires-artisan.webp",
     tags: ["ROI", "artisan", "chiffre d'affaires", "étude de cas"],
     content: [
       {
@@ -1681,7 +1681,7 @@ export const blogPosts: BlogPost[] = [
     author: "Kevin DX",
     publishedAt: "2025-02-05",
     readTime: "9 min",
-    image: "/blog/pages-indispensables-site-vitrine.jpg",
+    image: "/blog/pages-indispensables-site-vitrine.webp",
     tags: ["site vitrine", "pages", "structure", "conversion"],
     content: [
       {
@@ -1966,7 +1966,7 @@ export const blogPosts: BlogPost[] = [
     author: "Kevin DX",
     publishedAt: "2025-02-08",
     readTime: "8 min",
-    image: "/blog/fafcea-opco-financement-site-web.jpg",
+    image: "/blog/fafcea-opco-financement-site-web.webp",
     tags: ["FAFCEA", "OPCO", "financement", "artisan", "formation"],
     content: [
       {
@@ -2192,7 +2192,7 @@ export const blogPosts: BlogPost[] = [
     author: "Kevin DX",
     publishedAt: "2025-02-15",
     readTime: "10 min",
-    image: "/blog/referencement-local-google.jpg",
+    image: "/blog/referencement-local-google.webp",
     tags: ["SEO local", "Google", "référencement", "visibilité locale"],
     content: [
       {
@@ -2434,7 +2434,7 @@ export const blogPosts: BlogPost[] = [
     author: "Kevin DX",
     publishedAt: "2025-02-22",
     readTime: "9 min",
-    image: "/blog/intelligence-artificielle-site-web.jpg",
+    image: "/blog/intelligence-artificielle-site-web.webp",
     tags: ["IA", "chatbot", "automatisation", "innovation"],
     content: [
       {
