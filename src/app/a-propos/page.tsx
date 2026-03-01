@@ -8,6 +8,7 @@ import CareerTimeline from "@/components/sections/about/CareerTimeline";
 import WhyTrustMe from "@/components/sections/about/WhyTrustMe";
 import Values from "@/components/sections/about/Values";
 import { createMetadata } from "@/lib/metadata";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = createMetadata({
   title: "À Propos - De Couvreur à Développeur Web Freelance",
@@ -19,6 +20,7 @@ export const metadata: Metadata = createMetadata({
 export default function AProposPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Accueil", href: "/" }, { name: "À propos", href: "/a-propos" }]} />
       <AboutHero />
       <AboutStats />
       <CareerTimeline />

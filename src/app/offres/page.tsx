@@ -7,6 +7,7 @@ import OffresTemplates from "@/components/sections/offres/OffresTemplates";
 import OffresComparison from "@/components/sections/offres/OffresComparison";
 import FinalCTA from "@/components/sections/home/FinalCTA";
 import { templates } from "@/data/templates";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 // Strip heavy fields for client component
 const templatesListing = templates.map(({ colorScheme, longDescription, sections, idealFor, keyFeatures, ...rest }) => rest);
@@ -124,6 +125,7 @@ const offresJsonLd = {
 export default function OffresPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Accueil", href: "/" }, { name: "Nos offres", href: "/offres" }]} />
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger

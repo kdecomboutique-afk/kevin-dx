@@ -13,7 +13,7 @@ const thumbnails = [
 ];
 
 const stats = [
-  { value: 26, suffix: "+", label: "Templates" },
+  { value: 26, suffix: "", label: "Templates" },
   { value: 16, label: "Secteurs" },
   { value: 97, suffix: "/100", label: "Lighthouse" },
 ];

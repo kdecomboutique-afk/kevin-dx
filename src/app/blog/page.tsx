@@ -4,6 +4,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import BlogGrid from "@/components/sections/blog/BlogGrid";
 import { blogPosts, blogCategories } from "@/data/blog-posts";
 import { createMetadata } from "@/lib/metadata";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = createMetadata({
   title: "Blog - Conseils et Guides pour votre Présence Web",
@@ -18,6 +19,7 @@ const postsListing = blogPosts.map(({ content, ...rest }) => rest);
 export default function BlogPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Accueil", href: "/" }, { name: "Blog", href: "/blog" }]} />
       {/* Hero section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-surface via-white to-primary/5 py-16 sm:py-20">
         <div

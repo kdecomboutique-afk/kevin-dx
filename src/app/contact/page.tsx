@@ -5,6 +5,7 @@ import ContactForm from "@/components/sections/contact/ContactForm";
 import ContactInfo from "@/components/sections/contact/ContactInfo";
 import ContactMap from "@/components/sections/contact/ContactMap";
 import { createMetadata } from "@/lib/metadata";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = createMetadata({
   title: "Contactez Kevin DX - Devis Gratuit sous 24h",
@@ -16,6 +17,7 @@ export const metadata: Metadata = createMetadata({
 export default function ContactPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Accueil", href: "/" }, { name: "Contact", href: "/contact" }]} />
       {/* Hero */}
       <section className="bg-gradient-to-b from-primary/5 to-surface pt-32 pb-16 lg:pt-40 lg:pb-20">
         <Container>

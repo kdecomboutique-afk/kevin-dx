@@ -6,6 +6,7 @@ import TemplateStats from "@/components/sections/templates/TemplateStats";
 import BottomCTA from "@/components/sections/templates/BottomCTA";
 import { createMetadata } from "@/lib/metadata";
 import { templates, templateCategories } from "@/data/templates";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = createMetadata({
   title: "Templates - Modèles de sites web professionnels",
@@ -20,6 +21,7 @@ const templatesListing = templates.map(({ colorScheme, longDescription, sections
 export default function TemplatesPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Accueil", href: "/" }, { name: "Templates", href: "/templates" }]} />
       <TemplatesHero />
       <TemplateStats />
 

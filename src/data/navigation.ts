@@ -3,7 +3,7 @@ import { NavItem } from "@/types";
 export const navigation: NavItem[] = [
   {
     label: "Mes offres",
-    href: "#",
+    href: "/offres",
     children: [
       { label: "Toutes les offres", href: "/offres" },
       { label: "Site Vitrine", href: "/site-vitrine" },
@@ -11,17 +11,17 @@ export const navigation: NavItem[] = [
       { label: "Réseaux Sociaux", href: "/reseaux-sociaux" },
     ],
   },
+  { label: "Templates", href: "/templates" },
   {
     label: "Réalisations",
-    href: "#",
+    href: "/realisations",
     children: [
       { label: "Templates & démos", href: "/realisations" },
       { label: "Études de cas", href: "/etudes-de-cas" },
     ],
   },
   { label: "Blog", href: "/blog" },
-  { label: "Parrainage", href: "/parrainage" },
-  { label: "Devis gratuit", href: "/devis" },
+  { label: "À propos", href: "/a-propos" },
 ];
 
 export const footerLinks = {
@@ -51,5 +51,6 @@ export const footerLinks = {
   legal: [
     { label: "Mentions légales", href: "/mentions-legales" },
     { label: "Politique de confidentialité", href: "/politique-confidentialite" },
+    { label: "CGV", href: "/cgv" },
   ],
 };
